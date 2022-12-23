@@ -149,7 +149,7 @@ La heatmap est également colorée puisque la couleur des points représente l'h
 
 À l'aide de cette palette, les valeurs limites sont très différenciables, et les valeurs intermédiaires peuvent également être suffisamment distinguées.
 
-Finalement, la linechart possédant deux courbes, nous avons décidé d'utiliser les mêmes couleurs que les deux couleurs représentant les valeurs limites du pourcentage aux tirs de la heatmap. Il s'agit donc de bleu et de jaune. Pour renforcer la distinction (par exemple pour des personnes qui ne voient qu'en niveau de gris), une courbe est en pointillés et l'autre en pleine ligne. L'image ci-dessous présente un exemple de linechart ainsi que les deux couleurs utilisées et leur perception par les personnes atteintes de différents types de daltonisme.
+Finalement, la linechart possédant deux courbes, nous avons décidé d'utiliser les mêmes couleurs que les deux couleurs représentant les valeurs limites du pourcentage aux tirs de la heatmap. Il s'agit donc de bleu et de jaune orangé. Pour renforcer la distinction (par exemple pour des personnes qui ne voient qu'en niveau de gris), une courbe est en pointillés et l'autre en pleine ligne. L'image ci-dessous présente un exemple de linechart ainsi que les deux couleurs utilisées et leur perception par les personnes atteintes de différents types de daltonisme.
 
 <p align="center">
 <img src="./readme_resources/linechart_daltonism.png" alt="Linechart daltonism" width="500"/>
