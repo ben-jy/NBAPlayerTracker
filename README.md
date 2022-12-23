@@ -49,8 +49,10 @@ L'interface de notre application interactive est composé de différentes repré
 
 La partie supérieure de l'application contient une représentation globale des données dans un tableau. Elle offre un premier aperçu des informations et des statistiques des joueurs qui peuvent être représentées textuellement. Ce tableau est représenté par l'image ci-dessous.
 
-<img src="./readme_resources/tableau_1.png" alt="drawing" width="600" style="display: block; margin: 0 auto"/>
-<h4 align="center">Tableau représentant les données globalement</h4>
+<p align="center">
+<img src="./readme_resources/tableau_1.png" alt="Table" width="600"/>
+</p>
+<h5 align="center">Tableau représentant les données globalement</h5>
 <br>
 
 Toutes les données de ce tableau sont statiques. Les premières colonnes contiennent les informations générales des joueurs (nom, prénom, date de naissance, taille, poids, poste, équipe actuelle, salaire actuel, etc.) et les colonnes suivantes contiennent les statistiques des joueurs durant la dernière saison. Le tableau offre donc une vue globale et actuelle des informations et statistiques des joueurs.
@@ -64,8 +66,10 @@ La partie inférieure de l'application contient plusieurs représentations plus 
 
 La première représentation est construite sous forme de deux cartes permettant de comparer numériquement les statistiques de deux joueurs. Chaque carte contient une partie supérieure statique, composée des informations générales du joueur en plus de sa photo, et une partie inférieure dynamique, composée des statistiques du joueur selon les saisons sélectionnées. Elles sont représentées par l'image ci-dessous.
 
-<img src="./readme_resources/cartes_comparatives.png" alt="drawing" width="400" style="display: block; margin: 0 auto"/>
-<h4 align="center">Deux cartes pour deux joueurs différents permettant la comparaison des statistiques</h4>
+<p align="center">
+<img src="./readme_resources/cartes_comparatives.png" alt="Compare cards" width="400"/>
+</p>
+<h5 align="center">Deux cartes pour deux joueurs différents permettant la comparaison des statistiques</h5>
 <br>
 
 Ces cartes permettent de se concentrer sur les statistiques de deux joueurs spécifiques et de les comparer rapidement à l'aide d'indicateurs visuels (flèches vertes ou rouges).
@@ -77,8 +81,10 @@ La deuxième représentation est constituée de deux scatterplot construites de 
 - la taille de chaque point représente le nombre de tirs tentés par le joueur à cet endroit du terrain.
 Le scatterplot est représenté par l'image ci-dessous.
 
-<img src="./readme_resources/heatmap.png" alt="drawing" width="300" style="display: block; margin: 0 auto"/>
-<h4 align="center">Heatmap sous forme de scatterplot pour un joueur spécifique</h4>
+<p align="center">
+<img src="./readme_resources/heatmap.png" alt="Heatmap" width="300"/>
+</p>
+<h5 align="center">Heatmap sous forme de scatterplot pour un joueur spécifique</h5>
 
 Les deux informations représentées permettent de visualiser les zones de prédilection du joueurs puisque les zones dans lesquelles le joueur est le plus habile formeront un groupe de points de couleur similaire et les zones où les joueurs tentent le plus de tirs formeront un groupe de points de taille similaire. Les principes de groupement de la théorie de la Gestalt telles que la similarité (points de même couleur ou de même taille) et la proximité (les clusters formant une zone de tirs sont éloignées les une des autres) sont utilisés dans cette représentation.
 
@@ -88,7 +94,10 @@ Comme les écarts des tirs tentés aux différents endroits peuvent être très 
 
 La dernière représentation est un line chart qui représente l'évolution d'une certaine statistique des deux joueurs comparés au cours des saisons sélectionnées. Le linechart est donc composée de deux courbes, de deux couleurs différentes, représentant l'évolution de la statistique en question pour chacun des deux joueurs. Cette représentation est représentée par l'image ci-dessous.
 
-<img src="./readme_resources/linechart.png" alt="drawing" width="550" style="display: block; margin: 0 auto"/>
+<p align="center">
+<img src="./readme_resources/linechart.png" alt="Linechart" width="550"/>
+</p>
+<h5 align="center">Line chart pour deux joueurs différents, selon le nombre de points par match</h5>
 
 
 Cette représentation permet de visualiser la tendance des performances des joueurs selon une statistique. Elle permet de voir si un joueur particulier progresse, ou au contraire, s'il stagne ou régresse. Elle permet également de comparer la progression de deux joueurs entre eux.
@@ -107,8 +116,10 @@ L'interface réalisée est construite de manière verticale. Les données global
 
 Cette granularité est représentée par l'image ci-dessous.
 
-<img src="./readme_resources/granularity.png" alt="drawing" width="550" style="display: block; margin: 0 auto"/>
-<p align="center">Granularité de l'information au sein de l'interface</p>
+<p align="center">
+<img src="./readme_resources/granularity.png" alt="Granularity" width="550"/>
+</p>
+<h5 align="center">Granularité de l'information au sein de l'interface</h5>
 
 
 #### 6.1.1 Choix des couleurs
@@ -117,74 +128,115 @@ Le choix des couleurs est également important, principalement pour permettre à
 
 Sur les cartes comparatives, un score y est associé représentant les performances globales du joueur lors de la saison actuelle. Afin de permettre une comparaison rapide de ces performances, le score est associé à une couleur. Trois couleurs sont utilisés, rouge, orange et vert, qui sont trois couleurs courantes pour représenter des niveaux de performances (mauvais, moyen, bon). Un exemple est présenté par l'image ci-dessous, avec un exemple pour chaque niveau de performance.
 
-<img src="./readme_resources/scores.png" alt="drawing" width="630" style="display: block; margin: 0 auto"/>
-<p align="center">Exemples de scores et de leur couleur associée</p>
+<p align="center">
+<img src="./readme_resources/scores.png" alt="Scores" width="630"/>
+</p>
+<h5 align="center">Exemples de scores et de leur couleur associée</h5>
 
 Sur ces mêmes cartes, les informations et statistiques numériques sont suivies d'une flèche, qui indique si la valeur est supérieure ou inférieure à celle du joueur comparé. Pour renforcer cette idée, les flèches sont de couleurs différentes selon que la valeur est supérieure ou inférieure. Les flèches sont donc de couleur verte si la valeur est supérieure, et de couleur rouge si la valeur est inférieure. Un exemple est présenté par l'image ci-dessous.
 
-<img src="./readme_resources/stats_arrows.png" alt="drawing" width="600" style="display: block; margin: 0 auto"/>
-<p align="center">Exemple des valeurs de deux cartes de joueurs comparés</p>
+<p align="center">
+<img src="./readme_resources/stats_arrows.png" alt="Stats arrows" width="600"/>
+</p>
+<h5 align="center">Exemple des valeurs de deux cartes de joueurs comparés</h5>
 
 La heatmap est également colorée puisque la couleur des points représente l'habilité du joueur à marquer un panier depuis la position correspondante. Comme les points sont nombreux et qu'ils forment différentes zones de couleurs différente, il est important de pouvoir les distinguer. Nous avons donc choisi une palette de couleur qui permet à la majorité des utilisateurs, quel que soit leur problème de vision, de distinguer les différentes zones de couleurs. Le résultat est présenté par l'images ci-dessous, avec un exemple pour certains types de daltonisme.
 
-<img src="./readme_resources/heatmap_daltonism.png" alt="drawing" width="600" style="display: block; margin: 0 auto"/>
-<p align="center">Exemples de la heatmap avec différents types de daltonisme</p>
+<p align="center">
+<img src="./readme_resources/heatmap_daltonism.png" alt="Heatmap daltonism" width="600"/>
+</p>
+<h5 align="center">Exemples de la heatmap avec différents types de daltonisme</h5>
 
 À l'aide de cette palette, les valeurs limites sont très différenciables, et les valeurs intermédiaires peuvent également être suffisamment distinguées.
 
 Finalement, la linechart possédant deux courbes, nous avons décidé d'utiliser les mêmes couleurs que les deux couleurs représentant les valeurs limites du pourcentage aux tirs de la heatmap. Il s'agit donc de bleu et de jaune. Pour renforcer la distinction (par exemple pour des personnes qui ne voient qu'en niveau de gris), une courbe est en pointillés et l'autre en pleine ligne. L'image ci-dessous présente un exemple de linechart ainsi que les deux couleurs utilisées et leur perception par les personnes atteintes de différents types de daltonisme.
 
-<img src="./readme_resources/linechart_daltonism.png" alt="drawing" width="500" style="display: block; margin: 0 auto"/>
-<p align="center">Exemple d'une linechart et la perception selon différents types de daltonisme</p>
+<p align="center">
+<img src="./readme_resources/linechart_daltonism.png" alt="Linechart daltonism" width="500"/>
+</p>
+<h5 align="center">Exemple d'une linechart et la perception selon différents types de daltonisme</h5>
 
 ### 6.2 Interaction
 
-Chacune de nos représentations sont interactives, à des niveaux différents. L'interaction principale est la possiblité d'afficher les données selon une période de temps. Ces interactions sont décrites dans les sections suivantes.
+Chacune de nos représentations sont interactives, à des niveaux différents. L'interaction principale est la possiblité d'afficher les données selon une période de temps. Nos interactions suivent relativement le Mantra de la visualisation de l'information, composé des étapes suivantes :
+- __Overview first__ : Le tableau de données est affiché en haut de la page et représente une vue d'ensemble des données.
+- __Zoom and filter__ : L'utilisateur ne peut pas zoomer sur les représentations (hormis sur le linechart et ce n'est pas forcément très utile), mais peut filtrer sur une période de temps et sur des joueurs à analyser et comparer.
+- __Details on demand__ : L'utilisateur peut scroller sur la page pour explorer les représentations détaillant les données qu'il souhaite analyser. Il peut également survoler les éléments de la représentation pour obtenir des informations supplémentaires.
 
-#### 6.2.1 Tri des données tabulaires
+La granularité mentionnée précédemment dans la structure de la page se retrouvent donc également dans les interactions.
 
-Le tableau de données est triable selon chacune des colonnes. Le tri est effectué en cliquant sur le nom de la colonne. Le tri est effectué de manière croissante par défaut, mais il est possible de trier de manière décroissante en cliquant une deuxième fois sur le nom de la colonne. Il permet à l'utilisateur de privilégier un critère (une information ou une statistique) lors de la recherche d'un joueur.
+#### 6.2.1 Tri des données tabulaires (reconfigurer)
 
-#### 6.2.2 Sélection de la période de temps
+Le tableau de données est triable selon chacune des colonnes. Le tri est effectué en cliquant sur le nom de la colonne. Un premier clic trie la colonne de manière croissante, un second de manière décroissante. Il permet à l'utilisateur de privilégier un critère (une information ou une statistique) lors de la recherche d'un joueur. Cette fonction de tri est illustrée par l'image ci-dessous.
 
-Les données affichées dans les représentations de comparaison sont modifiées en fonction de la période de temps sélectionnée. Les unité de temps correspondent aux saisons NBA (2012-13, 2013-14, etc.), qui sont comprises entre la saison 2012-13 à la saison actuelle (2022-23). La période de temps est sélectionnée par un slider qui est situé en haut de la partie inférieure de l'interface. Le slider est composé de deux curseurs, un pour la période de début et un pour la période de fin. Il est représenté par l'image ci-dessous.
+<p align="center">
+    <img src="./readme_resources/filter.png" alt="Table sorting" width="400"/>
+</p>
+<h5 align="center">Exemple d'une possibilité de tri du tableau, ici la colonne des salaires</h5>
 
-<img src="./readme_resources/slider.png" alt="drawing" width="300" style="display: block; margin: 0 auto"/>
-
-Lors de sa mise à jour, les données de chacune des représentations de la partie de comparaison de l'interface (c'est-à-dire les cartes, les scatters plots et le line chart) sont mises à jour en fonction de la période de temps sélectionnée.
-
-#### 6.2.3 Sélection des joueurs à comparer
-
-Le nom des joueurs affichés dans leurs cartes est un dropdown menu dans lequel il est également possible de taper le nom du joueur recherché. Cela permet à l'utilisateur de trouver rapidement le nom du joueur qu'il souhaite comparer (en ayant typiquement en amont déjà trouvé le nom du joueur grâce au tableau de données). Au démarrage de l'application, les deux joueurs affichés sont ceux qui ont le score de performance le plus élevé. À chaque fois que la sélection dans le dropdown menu est mise à jour, les cartes des joueurs ainsi que les scatterplots et le line chart sont mis à jour avec les données des joueurs sélectionnés.
-
-#### 6.2.4 Sélection de la période de temps
+#### 6.2.2 Sélection de la période de temps (filtrer)
 
 Les données affichées dans les représentations de comparaison sont modifiées en fonction de la période de temps sélectionnée. Les unité de temps correspondent aux saisons NBA (2012-13, 2013-14, etc.), qui sont comprises entre la saison 2012-13 à la saison actuelle (2022-23). La période de temps est sélectionnée par un slider qui est situé en haut de la partie inférieure de l'interface. Le slider est composé de deux curseurs, un pour la période de début et un pour la période de fin. Il est représenté par l'image ci-dessous.
 
-<img src="./readme_resources/slider.png" alt="drawing" width="300" style="display: block; margin: 0 auto"/>
+<p align="center">
+    <img src="./readme_resources/slider.png" alt="Slider" width="500"/>
+</p>
+<h5 align="center">Slider permettant de sélectionner les saisons à analyser</h5>
 
 Lors de sa mise à jour, les données de chacune des représentations de la partie de comparaison de l'interface (c'est-à-dire les cartes, les scatters plots et le line chart) sont mises à jour en fonction de la période de temps sélectionnée.
 
-#### 6.2.5 Survol des points des scatterplots
+#### 6.2.3 Sélection des joueurs à comparer (filtrer)
+
+Le nom des joueurs affichés dans leurs cartes est un dropdown menu dans lequel il est également possible de taper le nom du joueur recherché. Cela permet à l'utilisateur de trouver rapidement le nom du joueur qu'il souhaite comparer (en ayant typiquement en amont déjà trouvé le nom du joueur grâce au tableau de données). Ce menu est illustré par l'image ci-dessous.
+
+<p align="center">
+<img src="./readme_resources/dropdown.png" alt="Dropdown" width="500"/>
+</p>
+<h5 align="center">Menu dropdown permettant de sélectrionner le premier joueur</h5>
+
+Au démarrage de l'application, deux joueurs sont déjà sélectionnés, il s'agit simplement des premiers joueurs selon un tri sur le prénom. À chaque fois que la sélection dans le dropdown menu est mise à jour, les cartes des joueurs ainsi que les scatterplots et le line chart sont mis à jour avec les données des joueurs sélectionnés.
+
+#### 6.2.4 Survol des points (élaborer)
 
 Lorsque l'utilisateur survole un point sur un scatterplot, le point est mis en évidence et données précises des tirs pour la localisation en question sont affichées dans un tooltip. Le tooltip est composé de trois informations :
 - le pourcentage de réussite des tirs (FG%),
 - le nombre de tirs tentés (FGA),
 - le nombre de tirs réussis (FGM).
-Ceci permet à l'utilisateur d'avoir s'il le souhaite des informations plus précises sur les tirs des joueurs, sans pour autant péjorer la lisibilité de la représentation.
 
-#### 6.2.5 Choix de la statistique à comparer dans le linechart
+Le comportement est le même pour linechart, qui fournit une information précise sur la valeur de la statistique. Ce survol est illustré par les images ci-dessous.
 
-Le line chart permet l'évolution des statistiques de deux joueurs sur une certaine période. Chaque statistique peut être affichée ou non en sélectionnant ou déselectionnant le bouton (qui sert de checkbox) correspondant à la statistique. Cela permet à l'utilisateur de choisir les statistiques qu'il souhaite comparer.
+<p align="center">
+<img src="./readme_resources/hover.png" alt="Hover" width="400"/>
+</p>
+<h5 align="center">Survol respectivement d'un point du scatterplot et d'un point du linechart</h5>
+
+Cette interaction est particulièrement utile dans le cas des scatterplots, puisqu'elle permet à l'utilisateur d'avoir s'il le souhaite des informations plus précises sur les tirs des joueurs, sans pour autant péjorer la lisibilité de la représentation.
+
+#### 6.2.5 Choix de la statistique à comparer dans le linechart (filtrer)
+
+Le line chart permet l'évolution d'une statistique de deux joueurs sur une certaine période. La statistique à analyser et comparer dans le temps est sélectionnée par l'utilisateur, en cliquant sur le boutonc orrespondant. Les boutons sont situés au dessus du line chart, et sont illustrés par l'image ci-dessous.
+
+<p align="center">
+    <img src="./readme_resources/linechart_button.png" alt="Boutons linechart" width="500"/>
+</p>
+<h5 align="center">Linechart avec les boutons de sélection de la statistique au dessus. Ici l'analyse est faite en fonction des points des joueurs</h5>
+
+ Cela permet à l'utilisateur de se focaliser sur une statistique particulière, et de comparer les joueurs dans le temps en fonction de celle-ci.
 
 ## 7. Critique des outils utilisés
 
 Tout l'application a été développée en utilisant le framework Python Dash. Ce framework étant particulièrement adapté à la création d'application web de visualisation de données, la réalisation de notre projet a été grandement facilitée et accélérée. Cependant, cette facilité d'utilisation a un coût, puisqu'il est difficile de personnaliser certains composants et donc d'implémenter des comportements spécifiques à l'utilisation que nous voulions en faire.
 
-Nous voulions par exemple implémenter la possibilité d'ajouter des joueurs dans la comparaison en cliquant sur un bouton contenu dans le tableau de données, afin de renforcer l'idée que ce tableau sert de point de départ en amont de la comparaison. Avec Dash, il semblait difficile d'implémenter ce comportemnet et avons donc été contraint d'opter pour une utilisation plus classique avec un dropdown menu.
+En effet, nous voulions par exemple implémenter la possibilité d'ajouter des joueurs dans la comparaison en cliquant sur un bouton contenu dans le tableau de données, afin de renforcer l'idée que ce tableau sert de point de départ en amont de la comparaison. Avec Dash, il semblait difficile d'implémenter ce comportemnet et avons donc été contraint d'opter pour une utilisation plus classique avec un dropdown menu.
 
-Notre application étant composé de visualisations de données assez classiques, nous n'avons pas eu des besoins conséquents de personnalisation et le choix de cette technologie s'est donc avéré judicieux et pertinent. Il est aussi important de noter qu'elle était nouvelle pour nous, et qu'avec un peu plus d'expérience, nous aurions pu certainement l'utiliser de manière plus efficace. 
+Notre application étant composé de visualisations de données assez classiques, nous n'avons pas eu des besoins conséquents de personnalisation et le choix de cette technologie s'est donc avéré judicieux et pertinent. Il est aussi important de noter qu'elle était nouvelle pour nous, et qu'avec un peu plus d'expérience, nous aurions pu certainement l'utiliser de manière plus efficace. La librairie Plotly.JS possède en effet de grandes quantité de visualisations, et nous aurions certainement pu en utiliser certaines pour illustrer nos données. Un radar chart aurait par exemple été utile pour illustrer encore mieux le profil des joueurs (un joueur est-il plutôt un offensif ou défensif ?). Notre application étant single page, une quantité trop importante de visualisations aurait cependant pu rendre l'application difficile à utiliser, il aurait donc fallu également réfléchir à une manière sensée de séparer les représentations en plusieurs pages.
+
+Concernant l'utilisation de Python et de Notebook pour le traitement et la création des données, ce choix a été tout à fait légitime puisque nous avons l'habitude de travailler avec ces outils, et qu'ils permettent de réalisser des traitements rapidement, en visualisant les modifications faites sur les données.
 
 ## 8. Conclusion
 
-En conclusion, nous avons pu réaliser un projet qui nous a permis de mettre en pratique les connaissances acquises en cours de visualisation de données tout en répondant à la problématique que nous 
+En conclusion, l'application développée est fonctionnelle et les représentations utilisées font sens puisqu'elle répondent chacune à besoin spécifique qu'un entraîneur ou directeur sportif peut avoir lorsqu'il veut signer un nouveau joueur dans son équipe. Nous pensons donc que l'utilité de notre application est réelle, et qu'elle pourrait, après quelques améliorations, être utilisée par des équipes professionnelles de basket-ball.
+
+Ces améliorations concernent principalement la GUI dans son ensemble, puisque notre application est très peu responsive et qu'elle ne s'adapte pas très bien à certaines tailles d'écran (c'est pas exemple le cas si l'application est ouverte sur un smartphone). Le positionnement des différents composants et représentations pourraient également être améliorés, de même que pour la structure de l'application (par exemple utilisé plusieurs pages ou un menu de navigation).
+
+Hormis ces points à améliorer, l'objectif de ce projet est atteint puisque nous avons mis en place une application interactive et que certains concepts vus en cours ont été mis en pratique. Nous avons également pu nous familiariser avec le framework Dash, qui est un choix très intéressant lors du développement d'application web de visualisation de données. Finalement, nous sommes donc satisfaits de notre projet et avons pris beaucoup de plaisir à le réaliser.

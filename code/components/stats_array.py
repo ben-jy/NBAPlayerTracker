@@ -75,6 +75,23 @@ def get_players_stats():
     df = df.transpose()
     df.insert(0, 'id_player', df.index)
 
+    # For the last 3 columns, convert to pourcentage
+    df['FG%'] = df['FG%']*100
+    df['3P%'] = df['3P%']*100
+    df['FT%'] = df['FT%']*100
+
+    # # Foreach value in the column above, round to 2 decimal places
+    df['score'] = df['score'].apply(lambda x: "%.1f" % x)
+    df['PTS'] = df['PTS'].apply(lambda x: "%.1f" % x)
+    df['AST'] = df['AST'].apply(lambda x: "%.1f" % x)
+    df['REB'] = df['REB'].apply(lambda x: "%.1f" % x)
+    df['STL'] = df['STL'].apply(lambda x: "%.1f" % x)
+    df['BLK'] = df['BLK'].apply(lambda x: "%.1f" % x)
+    df['TOV'] = df['TOV'].apply(lambda x: "%.1f" % x)
+    df['FG%'] = df['FG%'].apply(lambda x: "%.1f" % x)
+    df['3P%'] = df['3P%'].apply(lambda x: "%.1f" % x)
+    df['FT%'] = df['FT%'].apply(lambda x: "%.1f" % x)
+
     # Convert score, PTS, AST, REB, STL, BLK, TOV, FG%, 3P%, FT% to float
     df['score'] = df['score'].astype(float)
     df['PTS'] = df['PTS'].astype(float)
@@ -86,23 +103,6 @@ def get_players_stats():
     df['FG%'] = df['FG%'].astype(float)
     df['3P%'] = df['3P%'].astype(float)
     df['FT%'] = df['FT%'].astype(float)
-
-    # For the last 3 columns, convert to pourcentage
-    df['FG%'] = df['FG%']*100
-    df['3P%'] = df['3P%']*100
-    df['FT%'] = df['FT%']*100
-
-    # Foreach value in the column above, round to 2 decimal places
-    df['score'] = df['score'].apply(lambda x: "%.1f" % x)
-    df['PTS'] = df['PTS'].apply(lambda x: "%.1f" % x)
-    df['AST'] = df['AST'].apply(lambda x: "%.1f" % x)
-    df['REB'] = df['REB'].apply(lambda x: "%.1f" % x)
-    df['STL'] = df['STL'].apply(lambda x: "%.1f" % x)
-    df['BLK'] = df['BLK'].apply(lambda x: "%.1f" % x)
-    df['TOV'] = df['TOV'].apply(lambda x: "%.1f" % x)
-    df['FG%'] = df['FG%'].apply(lambda x: "%.1f" % x)
-    df['3P%'] = df['3P%'].apply(lambda x: "%.1f" % x)
-    df['FT%'] = df['FT%'].apply(lambda x: "%.1f" % x)
 
     # Convert to string
     df['FG%'] = df['FG%'].astype(str) + '%'
